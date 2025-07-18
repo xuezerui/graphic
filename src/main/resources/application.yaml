@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ry?useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: '040306'
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # ??SQL??
+    map-underscore-to-camel-case: true # ??????
+  global-config:
+    db-config:
+      id-type: auto # ????
+  mapper-locations: classpath:mapper/*.xml # XML??????
